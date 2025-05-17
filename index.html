@@ -15,7 +15,9 @@
   <header>
     <span class="lineGeneral"></span>
     <h1>Lucas Paulo - Desenvolvedor FullStack</h1>
-    <p id="textDigit">Construindo soluções com Node.js, MongoDB e JavaScript :)</p>
+    <div class="txt-animado">
+      <span></span>
+    </div>
 
   </header>
 
@@ -38,6 +40,7 @@
       <div class="icons-social">
         <a href="https://github.com/LucasPaulo001" target="_blank"><i class="fa-brands fa-github icon"></i></a>
         <a href="https://www.linkedin.com/in/lucaspaulo0/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
+        <a href="https://www.instagram.com/_lucaspaul0_/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
       </div>
 
       <a href="#projetos" class="linkProject">Projetos</a>
@@ -48,7 +51,7 @@
     <div id="imageAuthor">
       <img src="assets/images/InShot_20250515_210227209.png" alt="">
     </div>
-    <svg id="wave" class="waveTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg class="waveTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#0099ff" fill-opacity="1"
         d="M0,160L130.9,320L261.8,256L392.7,320L523.6,64L654.5,64L785.5,160L916.4,192L1047.3,96L1178.2,288L1309.1,224L1440,32L1440,320L1309.1,320L1178.2,320L1047.3,320L916.4,320L785.5,320L654.5,320L523.6,320L392.7,320L261.8,320L130.9,320L0,320Z">
       </path>
@@ -64,22 +67,22 @@
       </li>
       <span class="lineTech"></span>
       <li class="imgTech">
-        <img src="assets/images/js.png" alt="">
+        <img loading="lazy" src="assets/images/js.png" alt="">
       </li>
       <li class="imgTech"> 
-        <img src="assets/images/mongo.png" alt="">
+        <img loading="lazy" src="assets/images/mongo.png" alt="">
       </li>
       <li class="imgTech">
-        <img src="assets/images/react.png" alt="">
+        <img loading="lazy" src="assets/images/react.png" alt="">
       </li>
       <li class="imgTech">
-        <img src="assets/images/html.png" alt="">
+        <img loading="lazy" src="assets/images/html.png" alt="">
       </li>
       <li class="imgTech">
-        <img src="assets/images/css.png" alt="">
+        <img loading="lazy" src="assets/images/css.png" alt="">
       </li>
       <li class="imgTech">
-        <img src="assets/images/git.png" alt="">
+        <img loading="lazy" src="assets/images/git.png" alt="">
       </li>
     </ul>
 
@@ -171,6 +174,11 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000, // tempo entre slides (em ms)
+        disableOnInteraction: false, // continua mesmo se o usuário interagir
       },
     });
   </script>

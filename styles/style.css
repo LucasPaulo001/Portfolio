@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Press+Start+2P&display=swap');
 
 * {
     padding: 0;
@@ -46,16 +46,40 @@ header h1{
 }
 
 #wave{
+    width: 100%;
     position: absolute;
     z-index: -99;
     bottom: 0;
     height: 70%;
-    opacity: 0.2;
+    opacity: 0.1;
     width: 100%;
     border-radius: 15px;
+    animation: wave 40s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%{
+        transform: scaleY(1);
+    }
+    20%{
+        transform: scaleY(1.5);
+        transform: translateX(10px);
+    }
+    40%{
+        transform: scaleY(1.8);
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scaleY(1.2);
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scaleY(1);
+    }
 }
 
 #about{
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -164,7 +188,8 @@ header h1{
 
 .btnsFormat{
     display: flex;
-    gap: 25px
+    gap: 25px;
+    align-items: center;
 }
 
 .btnsFormat i{
@@ -194,50 +219,9 @@ html{
 button{
     cursor: pointer;
 }
-#textDigit {
-    display: block;
-    font-size: 1vw;
-    font-weight: bold;
-    width: 30ch;
-    font-family: "Press Start 2P", system-ui;
-    animation: pointer .6s infinite, animationDigit 6s steps(22, end) infinite;
-    white-space: nowrap;
-    overflow: hidden;
-}
 
 .icons-social a{
     color: white;
-}
-
-@keyframes pointer {
-    from{
-       border-right: 10px solid transparent;
-    }
-    to{
-        border-right: 10px solid #1f6feb;
-    }
-}
-
-@keyframes animationDigit {
-    
-    0%{
-        width: 0;
-    }
-    20%{
-        width: 30ch;
-    }
-    40%{
-        width: 60ch;
-    }
-    60%{
-        width: 60ch;
-    }
-    80%{
-        width: 60ch;
-    }
-    100%{
-        width: 0ch;
-    }
 }
 
 @keyframes btnAnimation {
@@ -288,8 +272,31 @@ button{
     justify-content: space-evenly;
 }
 
+#techs h2{
+    font-size: 4vw;
+}
+
 .imgTech{
     height: 95px;
+    
+}
+
+#techs:hover ul .imgTech img{
+    animation: icons .5s ease-in-out;
+    transition: .4s;
+}
+
+@keyframes icons {
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(1.5) translateY(10px);
+    }
+    100%{
+         transform: scaleX(1);
+         transform: translateY(0);
+    }
 }
 
 
@@ -315,6 +322,69 @@ button{
 
 .imgTech img{
     height: 100%;
+}
+
+.txt-animado{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.txt-animado span{
+    position: relative;
+    width: 100%;
+    font-family: "Fira Code", monospace;
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #00BFFF;
+    animation: word 25s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    border-left: 3px solid #1f6feb;
+    animation: cursor .8s ease-in-out infinite, digit 25s steps(22, end) infinite;
+    background-color: #0d1117;
+    width: 100%;
+}
+
+@keyframes digit {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 3px solid #0d1117;
+    }
+    
+}
+
+@keyframes word {
+    0%, 20%{
+        content: "Código com propósito.";
+    }
+    21%, 40%{
+        content: "Soluções que conectam.";
+    }
+    41%, 60%{
+        content: "Construindo ideias.";
+    }
+    61%, 80%{
+        content: "Funcionalidade é tudo.";
+    }
+    81%, 100%{
+        content: "Aprendizado constante.";
+    }
 }
 
 @media(max-width: 780px){
@@ -409,7 +479,7 @@ button{
         position: absolute;
         z-index: -99;
         bottom: 0;
-        height: 70%;
+        top: 0;
         opacity: 0.3;
         width: 100%;
         border-radius: 15px;

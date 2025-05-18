@@ -9,6 +9,9 @@
   <script src="https://kit.fontawesome.com/cabab9bb0d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/style-bundle.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -97,12 +100,41 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card_tech">
               <h3>VoxEC</h3>
               <div class="dataProject">
-                <div class="textFormat">
+                <div class="textFormat w-100">
                   <p>Aplicação de mensagens em tempo real e organização de estudos</p>
-                  <span>Tecnologias: Node.js, MongoDB, Handlebars, Socket.IO</span>
+
+                  <span class="techs_used w-100">
+                    <strong>Tecnologias:</strong><span>🟩 Node.js, 🟢 MongoDB, 🟠 Handlebars, ⚪ Socket.IO</span>
+                    <span class="lineGeneral"></span>
+                    <ul>
+                      <li>
+                        Handlebars: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-html-hbs" style="width: 42%">42%</div>
+                        </div>
+                      </li>
+                      <li>
+                        JavaScript:
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-js" style="width: 34.8%">34.8%</div>
+                        </div>
+                      </li>
+                      <li>
+                        CSS:
+                        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar text-yellow" style="width: 21.1%">21.1%</div>
+                        </div>
+                      </li>
+                      <li>
+                        HTML:
+                        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-html-hbs" style="width: 2.1%">2.1%</div>
+                        </div>
+                      </li>
+                    </ul></span>
                 </div>
                 <div class="imgProject">
                   <img src="assets/images/VoxEC (sem fundo).png" alt="">
@@ -115,12 +147,24 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card_tech">
               <h3>Setup-Node</h3>
               <div class="dataProject">
                 <div>
                   <p>Script bash para criar a estrutura de projetos Node.js com banco e views.</p>
-                  <span>Tecnologias: Bash, Node.js</span>
+                  <span class="techs_used"><strong>Tecnologias:</strong> 🟢 shell script
+                    <span class="lineGeneral"></span>
+                    <ul>
+                      <li>
+                        Shell Script: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-shell" style="width: 100%">100%</div>
+                        </div>
+                      </li>
+                    </ul>
+                  
+                  </span>
+                  
                 </div>
                 <div class="imgProject">
                   <img src="assets/images/logoSN.png" alt="">
@@ -133,12 +177,35 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
+            <div class="card_tech">
               <h3>PetShot - Landing Page</h3>
               <div class="dataProject">
-                <div>
+                <div class="w-100">
                   <p>Landing page para um PetShot fictício.</p>
-                  <span>Tecnologias: HTML5, CSS, JavaScript</span>
+                  <span class="techs_used"><strong>Tecnologias:</strong> 🟠 HTML5, 🔵 CSS, 🟡 JavaScript
+                  <span class="lineGeneral"></span>
+                    <ul>
+                      <li>
+                        HTML: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-html-hbs" style="width: 47.7%">47.7%</div>
+                        </div>
+                      </li>
+                      <li>
+                        CSS: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-primary" style="width: 45.9%">45.9%</div>
+                        </div>
+                      </li>
+                      <li>
+                        JavaScript: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-js" style="width: 6.4%">6.4%</div>
+                        </div>
+                      </li>
+                    </ul>
+                  
+                  </span>
                 </div>
                 <div class="imgProject"> 
                   <img src="assets/images/logoPS.png" alt="">
@@ -147,6 +214,34 @@
               <div class="btnsFormat">
                 <a class="linkProject" href="https://lucaspaulo001.github.io/PetShop-landing-page/" target="_blank">Acessar</a>
                 <a href="https://github.com/LucasPaulo001/PetShop-landing-page" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card_tech">
+              <h3>Programação em C</h3>
+              <div class="dataProject">
+                <div>
+                  <p>Lista de exercícios e desafios utilizando a linguagem C.</p>
+                  <span class="techs_used"><strong>Tecnologias:</strong> ⚪ C
+                  <span class="lineGeneral"></span>
+                  <ul>
+                    <li>
+                        C: 
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-c" style="width: 100%">100%</div>
+                        </div>
+                      </li>
+                  </ul>
+                  
+                  </span>
+                </div>
+                <div class="imgProject"> 
+                  <img src="assets/images/c.png" alt="">
+                </div>
+              </div>
+              <div class="btnsFormat">
+                <a href="https://github.com/LucasPaulo001/C_Programming" target="_blank"><i class="fa-brands fa-github icon"></i></a>
               </div>
             </div>
           </div>
@@ -166,6 +261,9 @@
 
   <script src="js/swiper-bundle.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
   <script>
     var swiper = new Swiper(".mySwiper", {
       pagination: {
@@ -178,8 +276,8 @@
       },
       loop: true,
       autoplay: {
-        delay: 3000, // tempo entre slides (em ms)
-        disableOnInteraction: false, // continua mesmo se o usuário interagir
+        delay: 6000,
+        disableOnInteraction: false,
       },
     });
   </script>

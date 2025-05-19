@@ -1,0 +1,118 @@
+#dados-github{
+    backdrop-filter: blur(2px);
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d11176b;
+    margin: 3em;
+    box-shadow: 1px 1px 18px #1f6feb;
+    border-radius: 15px;
+}
+
+#img-avatar{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+
+}
+
+.repoList{
+    overflow-y: auto;
+    height: 50vh;
+    padding: 1.3em 1em;
+}
+
+.repoList a{
+    color: #ffffff;
+    transition: .4s ease-in;
+}
+
+.localData ul li{
+    list-style: circle;
+}
+
+.localData ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.repoList a:hover{
+    color: #1f6feb;
+}
+
+.repoList p{
+    border: 1px solid #1f71eb77;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.repoList .description{
+    border-radius: 10px;
+    background-color: #1f71eb36;
+    margin-bottom: 1.5em;
+    padding: 10px;
+}
+
+#dados-user{
+    width: 50%;
+}
+
+.localData a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imgAvatar{
+    height: 100%;
+    border-radius: 100%;
+}
+
+.card-data{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.4em;
+}
+
+@media(max-width: 740px){
+    .card-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 2em;
+    }
+
+    .card-data #img-avatar{
+        height: 100px;
+    }
+
+    #img-avatar{
+        margin-top: 1em;
+        gap: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #dados-user {
+        width: 100%;
+    }  
+
+    #dados-github{
+        margin: 1em;
+        padding: 1.8em 1em;
+    }
+
+    .localData ul{
+        padding: .5em;
+    }
+
+    .localData ul li{
+        list-style: none;
+    }
+
+}

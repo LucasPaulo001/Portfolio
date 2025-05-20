@@ -282,24 +282,6 @@ button{
     
 }
 
-#techs:hover ul .imgTech img{
-    animation: icons .5s ease-in-out;
-    transition: .4s;
-}
-
-@keyframes icons {
-    0%{
-        transform: scaleX(1);
-    }
-    50%{
-        transform: scaleX(1.5) translateY(10px);
-    }
-    100%{
-         transform: scaleX(1);
-         transform: translateY(0);
-    }
-}
-
 
 .lineTech{
     height: 5px;
@@ -322,7 +304,7 @@ button{
 }
 
 .imgTech img{
-    height: 100%;
+    height: 9vw;
 }
 
 .txt-animado{
@@ -434,6 +416,15 @@ button{
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         gap: 14px;
+        padding: 0;
+    }
+
+    #techs h2{
+        font-size: 8vw;
+    }
+
+    #techs ul li img{
+        height: 15vw;
     }
     .lineTech{
         display: none;

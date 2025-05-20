@@ -55,9 +55,10 @@ const fetchData = async () => {
       ${dataRepo.map((repo) => `
       <a href="${repo.html_url}" target="_blank">
         <p>
+          <i class="fa-brands fa-github-alt icon"></i>
           ${repo.name} <br>
         </p>
-        <div class="description">${repo.description == null ? "Sem descrição": repo.description}</div>
+        <div class="description"><i class="fa-solid fa-pen"></i>${repo.description == null ? "Sem descrição": repo.description}</div>
       </a>`).join("")}
     </div>
   </li>

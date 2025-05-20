@@ -30,6 +30,33 @@
     transition: .4s ease-in;
 }
 
+.repoList a p{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.description{
+    display: flex;
+    gap: 1em;
+}
+
+.iconGH{
+    animation: flutuar 2s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .localData ul li{
     list-style: circle;
 }

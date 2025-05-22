@@ -186,6 +186,14 @@ html{
     cursor: pointer;
 }
 
+.swiper-cert{
+    cursor: pointer !important;
+}
+
+.swiper-cert:active{
+    cursor: grabbing !important;
+}
+
 @media(max-width: 800px){
     .imgCertificado{
         height: 50%;

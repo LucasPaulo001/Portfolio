@@ -289,6 +289,36 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="card_tech">
+              <h3>Maze-Nexus</h3>
+              <div class="dataProject">
+                <div>
+                  <p>Maze-Nexus é uma rede social voltada para interações acadêmicas e profissionais. Com funcionalidades como postagens, curtidas, comentários e grupos de estudo, proporcionando uma experiência dinâmica e intuitiva.</p>
+                  <span class="techs_used"><strong>Tecnologias:</strong> 🔵 React + Vite, 🟩 Node.js + Express, 🟢 MongoDB, 🔵 CSS, 🟣 Bootstrap
+
+                    <ul>
+                      <li>
+                        C:
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-c" style="width: 100%">100%</div>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </span>
+                </div>
+                <div class="imgProject">
+                  <img src="assets/images/c.png" alt="">
+                </div>
+              </div>
+              <div class="btnsFormat">
+                <a href="https://github.com/LucasPaulo001/C_Programming" target="_blank"><i
+                    class="fa-brands fa-github icon"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -315,29 +345,42 @@
 
   </section>
 
-  <!--<section id="certificados">
+  <section id="certificados">
     <h2>Certificados</h2>
     <span class="lineGeneral"></span>
-    <div class="swiper mySwiperCard">
+    <div class="title">
+      <h4>Linguagem Python: </h4>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+    </div>
+    <h5>BootCamp - <a id="link-dio" href="https://web.dio.me/home">DIO</a></h5>
+    <div class="swiper swiper-certificados mySwiperCard">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide certificado">
+          <img src="assets/certificados/img1.jpg" alt="certificado - Introdução ao python com Suzano">
+        </div>
+        <div class="swiper-slide certificado">
+          <img src="assets/certificados/img2.jpg" alt="certificado - ambiente de desenvolvimento e primeiros passos com python">
+        </div>
+        <div class="swiper-slide certificado">
+          <img src="assets/certificados/img3.jpg" alt="certificado - Conhecendo a Linguagem de Programação Python">
+        </div>
       </div>
     </div>
-  </section>-->
+  </section>
+
+  <div class="certificado-body" id="modal">
+    <i class="fa-solid fa-xmark close" id="close"></i>
+    <div class="body" id="body">
+      
+    </div>
+  </div>
 
   <footer>
 
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
 
   <script src="js/swiper-bundle.js"></script>
 
@@ -365,15 +408,11 @@
       },
     });
 
-    /*var swiper = new Swiper(".mySwiperCard", {
+    var swiper = new Swiper(".mySwiperCard", {
       effect: "cards",
       grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false
-      }
-    });*/
+      
+    });
   </script>
 </body>
 

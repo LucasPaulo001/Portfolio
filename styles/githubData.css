@@ -115,6 +115,47 @@
     padding: 10px;
 }
 
+.blob{
+    height: 100px;
+    opacity: .2;
+    animation: blob 30s ease-in-out infinite;
+}
+
+.blob3{
+    height: 90px;
+    opacity: .2;
+    animation: blob 20s ease-in-out infinite;
+}
+
+.blob2{
+    height: 200px;
+    opacity: .1;
+    animation: blob 15s ease-in-out infinite;
+}
+@keyframes blob {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateX(200px);
+    }
+    20%{
+        transform: translateY(1000px);
+    }
+    40%{
+        transform: translate3d(300px);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    70%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 #dados-user{
     width: 50%;
 }
@@ -167,8 +208,21 @@
     justify-content: center;
 }
 
+.lineRepo{
+    margin-bottom: 2vw;
+}
+
 html{
     overflow-x: hidden !important;
+}
+
+.wave{
+    position: relative;
+}
+
+.wave img{
+    backdrop-filter: blur(3px);
+    
 }
 
 .swiper-certificados{
@@ -221,6 +275,13 @@ html{
         width: 45%;
         height: 50%;
         margin: 0;
+    }
+
+    .wave img{
+        backdrop-filter: blur(0px);
+        top: 1px;
+        z-index: 999;
+        position: relative;
     }
 
     .open .close{

@@ -58,8 +58,9 @@ const fetchData = async () => {
           <i class="fa-brands fa-github-alt icon"></i>
           ${repo.name} <br>
         </p>
-        <div class="description"><i class="fa-solid fa-pen"></i>${repo.description == null ? "Sem descrição": repo.description}</div>
+        <div class="description"><i class="fa-solid fa-pen"></i>${repo.description == null ? "Sem descrição": repo.description}</div><span class="lineGeneral lineRepo"></span>
       </a>`).join("")}
+      
     </div>
   </li>
 </ul>`;

@@ -116,18 +116,21 @@
 }
 
 .blob{
+    position: absolute;
     height: 100px;
     opacity: .2;
     animation: blob 30s ease-in-out infinite;
 }
 
 .blob3{
+    position: absolute;
     height: 90px;
     opacity: .2;
     animation: blob 20s ease-in-out infinite;
 }
 
 .blob2{
+    position: absolute;
     height: 200px;
     opacity: .1;
     animation: blob 15s ease-in-out infinite;
